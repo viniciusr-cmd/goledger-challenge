@@ -11,7 +11,7 @@ To accomplish that, we recommend you use a UNIX-like machine (Linux/macOS). Besi
 - Install Go (https://golang.org/dl/)
 - Fork the repository https://github.com/goledgerdev/goledger-challenge 
     - Fork it, do **NOT** clone it, since you will need to send us your forked repository
-	- If you cannot fork it, create a private repository and give access to `samuelvenzi` and `vieiramanoel`
+	- If you cannot fork it, create a private repository and give access to `samuelvenzi`
     - Make sure you the repository is in your `$GOPATH`
 - Download the Docker images of Hyperledger
 
