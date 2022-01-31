@@ -11,7 +11,7 @@ To accomplish that, we recommend you use a UNIX-like machine (Linux/macOS). Besi
 - Install Go (https://golang.org/dl/)
 - Fork the repository https://github.com/goledgerdev/goledger-challenge 
     - Fork it, do **NOT** clone it, since you will need to send us your forked repository
-	- If you cannot fork it, create a private repository and give access to `samuelvenzi` and `vieiramanoel`
+	- If you cannot fork it, create a private repository and give access to `samuelvenzi`
     - Make sure you the repository is in your `$GOPATH`
 - Download the Docker images of Hyperledger
 
@@ -99,7 +99,7 @@ Your chaincode is instantiated clean, so let’s initialize the ledger with a fe
 		-c '{"function":"initLedger","Args":[]}' 
 		--waitForEvent 
 		--tls 
-		--cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/	orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem 
+		--cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem 
 		--peerAddresses peer0.org1.example.com:7051 
 		--tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
 
@@ -110,7 +110,7 @@ Now check the cars in the ledger:
 	peer chaincode query 
 		-C mychannel 
 		-n fabcar 
-		-c ‘{"Args":["queryAllCars"]}'
+		-c '{"Args":["queryAllCars"]}'
 
 **Print your terminal and save it as `query0.jpg`**
 
